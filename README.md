@@ -1,1 +1,1 @@
-# Estudo-de-Caso-.ConcurrentModificationException-
+# Estudo de Caso - ConcurrentModificationException
