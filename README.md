@@ -17,3 +17,7 @@ O problema apresenta algumas peculiaridades:
 Até o presente momento, encontrei duas possíveis soluções para o problema, cada uma delas apresenta vantagens e desvantagens. A primeira solução consiste em instanciar uma ArrayList em cada execução do método validar() da ClasseC, no entanto isso acarreta no problema de precisar instanciar uma Array list a cada vez que realiza uma execução do método.
 
 A segunda abordagem consiste em usar a CopyOnWriteArrayList, que nada mais é que uma implementação de ArrayList Thread-safe pelo Java. A desvantagem dessa abordagem está no tempo de execução, tendo em vista que ela trabalha de modo a evitar conflitos entre manipulação de objetos pelas threads, prejudicando assim o tempo de execução. Ainda assim, esse método pode apresentar problemas, pois ele não garante a integridade dos dados durante a manipulação.
+
+Nesse projeto, desenvolvi uma branch para cada uma das abordagens, a fim de que a execução de testes seja facilitada, os nomes das branchs são os seguintes:
+-feature/instancearrays
+-feature/threadsafe
