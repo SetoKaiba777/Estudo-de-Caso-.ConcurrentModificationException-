@@ -2,6 +2,8 @@
 
 # Descrição do problema
 
+Para a execução desse projeto, será necessário utilizar a versão do 11 do Java. 
+
 Para reproduzir o erro, elaborei 3 classes
 - Uma classe que realiza operações em lista, que chamaremos de ClasseC (por ser a camada mais interna em execução)
 - Uma classe intermediária que percorre a lista retornada pelo método validar() da ClasseC que vou chamar de ClasseB
