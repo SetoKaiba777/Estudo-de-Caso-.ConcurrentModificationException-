@@ -1,6 +1,6 @@
 # Estudo de Caso : ConcurrentModificationException durante a execução de MultiThreads
 
-# Descrição do problema
+## Descrição do problema
 
 Para a execução desse projeto, será necessário utilizar a versão do 11 do Java. 
 
@@ -14,7 +14,7 @@ O problema apresenta algumas peculiaridades:
 - O número de Threads aumenta as chances de ocorrência da falha
 - O tamanho da lista também aumenta a probabilidade de ocorrência do erro.
 
-# Possiveis soluções
+## Possiveis soluções
 
 Até o presente momento, encontrei duas possíveis soluções para o problema, cada uma delas apresenta vantagens e desvantagens. A primeira solução consiste em instanciar uma ArrayList em cada execução do método validar() da ClasseC, no entanto isso acarreta no problema de precisar instanciar uma Array list a cada vez que realiza uma execução do método.
 
