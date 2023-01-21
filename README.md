@@ -20,7 +20,7 @@ Até o presente momento, encontrei duas possíveis soluções para o problema, c
 
 A segunda abordagem consiste em usar a CopyOnWriteArrayList, que nada mais é que uma implementação de ArrayList Thread-safe pelo Java. A desvantagem dessa abordagem está no tempo de execução, tendo em vista que ela trabalha de modo a evitar conflitos entre manipulação de objetos pelas threads, prejudicando assim o tempo de execução. 
 
-Ainda assim, esse método pode apresentar problemas dependendo do tamanho da lista.
+Ainda assim, ambos os métodos podem apresentar problemas na manipulação de dados dependendo do tamanho da lista, sendo o primeiro mais resiliente.
 
 Nesse projeto, desenvolvi uma branch para cada uma das abordagens, a fim de que a execução de testes seja facilitada, os nomes das branchs são os seguintes:
 - feature/instancearrays
