@@ -2,20 +2,19 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ClasseC {
-
-    private final ArrayList<Boolean> listaValidacao = new ArrayList<>();
+    
     private final Random gerador = new Random();
 
     public ClasseC(){}
 
     public ArrayList<Boolean> validar(){
-        listaValidacao.clear();
-        preencher();
+        ArrayList<Boolean> listaValidacao = new ArrayList<>();
+        preencher(listaValidacao);
         return listaValidacao;
     }
 
-    private void preencher(){
-        for(int i=0; i < 10000; i++) listaValidacao.add(gerador.nextBoolean());
+    private void preencher(ArrayList<Boolean> listaValidacao){
+        for(int i=0; i < 1000; i++) listaValidacao.add(gerador.nextBoolean());
         listaValidacao.add(true);
         listaValidacao.add(false);
     }
