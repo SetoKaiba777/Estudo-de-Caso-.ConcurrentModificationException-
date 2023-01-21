@@ -1,21 +1,21 @@
-import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ClasseC {
 
-    private final ArrayList<Boolean> listaValidacao = new ArrayList<>();
+    private final CopyOnWriteArrayList<Boolean> listaValidacao = new CopyOnWriteArrayList<>();
     private final Random gerador = new Random();
 
     public ClasseC(){}
 
-    public ArrayList<Boolean> validar(){
+    public CopyOnWriteArrayList<Boolean> validar(){
         listaValidacao.clear();
         preencher();
         return listaValidacao;
     }
 
     private void preencher(){
-        for(int i=0; i < 10000; i++) listaValidacao.add(gerador.nextBoolean());
+        for(int i=0; i < 1000; i++) listaValidacao.add(gerador.nextBoolean());
         listaValidacao.add(true);
         listaValidacao.add(false);
     }
